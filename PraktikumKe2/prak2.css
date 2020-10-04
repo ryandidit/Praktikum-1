@@ -1,0 +1,30 @@
+h1 {
+    background-color: aquamarine;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: dodgerblue;
+}
+
+p {
+    background-color: antiquewhite;
+}
+
+a {
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    padding: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: darkcyan;
+}
+
+button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+iframe {
+    width: 20cm;
+    height: 8cm;
+}
