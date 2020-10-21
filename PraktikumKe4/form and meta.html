@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="Utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!--<meta http-equiv="refresh" content="3"/>-->
+        <meta name="keywords" content="belajar membuat form"/>
+        <meta name="description" content="dahulu google akan menampilkan konten ini"/>
+        
+        <title>Formulir Data Diri</title>
+        <link rel="stylesheet" href="form.css">
+        
+    </head>
+    <body>
+        <h1>BIODATA DIRI</h1>
+    <div class="latar-form">
+        <form>
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" placeholder="Nama Lengkap Anda"><br>
+            <label for="locdate">Tempat Lahir:</label>
+            <input type="text" id="locdate" name="locdate" placeholder="Tempat lahir Anda"><br>
+            <label for="date">Tanggal Lahir:</label>
+            <input type="date" id="date" name="date"><br>
+            <label for="gender">Jenis Kelamin:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Laki-laki</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Perempuan</label><br>
+            <label for="sch">Pendidikan Terakhir:</label>
+            <select id="sch" name="sch">
+                <option value="SD">SD</option>
+                <option value="SMP">SMP</option>
+                <option value="SMA">SMA</option>
+                <option value="SMK" selected>SMK</option>
+            </select><br>
+            <label for="edu">Pendidikan Saat ini:</label>
+            <select id="edu" name="edu">
+                <option value="D2">D2</option>
+                <option value="D3">D3</option>
+                <option value="D4">D4</option>
+                <option value="S1" selected>S1</option>
+                <option value="S2">S2</option>
+            </select><br>
+            <label for="telpon">No. Telp/HP:</label>
+            <input type="number" id="telpon" name="telpon" maxlength="13" placeholder="Nomor Telpon Anda"><br>
+            <label for="addr">Alamat:</label><br>
+            <textarea id="addr" name="addr" rows="5" cols="30" aria-placeholder="Masukkan Alamat Anda yang Benar">
+            </textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    </body>
+</html>
+
