@@ -1,0 +1,238 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    margin-top: 80px;
+    background-color: snow;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Create three unequal columns that floats next to each other */
+.nav {
+    float: left;
+    padding: 10px;
+    height: 80px;
+    background: rgb(24, 151, 255);
+}
+
+/* Left and right column */
+.nav.logo {
+    width: 190px;
+    background: url("/pic/testtt.PNG");
+    position: fixed;
+    /* Set the navbar to fixed position */
+    top: 0;
+    /* Position the navbar at the bottom of the page */
+}
+
+.nav.logo a {
+    /* Make sure that the links stay side-by-side */
+    display: block;
+    /* Change the display to block, for responsive reasons (see below) */
+    color: rgb(100, 99, 99);
+    /* White text color */
+    text-align: center;
+    /* Center the text */
+    padding: 20px 20px;
+    /* Add some padding */
+    text-decoration: none;
+    /* Remove underline */
+}
+
+/* Middle column */
+.nav.middle {
+    width: 85%;
+    
+    position: fixed;
+    /* Set the navbar to fixed position */
+    top: 0;
+    /* Position the navbar at the bottom of the page */
+    margin-left: 190px;
+}
+
+.navbar {
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: seashell;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: seashell;
+    padding: 20px 20px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: rgb(45, 171, 255);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: rgb(100, 99, 99);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Clear floats after the columns */
+.row1:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Search Menu in Nav */
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black with a little bit see-through */
+}
+
+/* The content */
+.overlay-content {
+    position: relative;
+    top: 46%;
+    width: 80%;
+    text-align: center;
+    margin-top: 30px;
+    margin: auto;
+}
+
+/* Close button */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    cursor: pointer;
+    color: white;
+}
+
+.overlay .closebtn:hover {
+    color: #ccc;
+}
+
+/* Style the search field */
+.overlay input[type=text] {
+    padding: 15px;
+    font-size: 17px;
+    border: none;
+    float: left;
+    width: 80%;
+    background: white;
+}
+
+.overlay input[type=text]:hover {
+    background: #f1f1f1;
+}
+
+/* Style the search button */
+.overlay button {
+    float: left;
+    width: 20%;
+    padding: 16.3px;
+    background-color: rgb(24, 151, 255);
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    margin-top: 0px;
+}
+
+.overlay button:hover {
+    background: rgb(45, 171, 255);
+}
+
+
+.footer {
+    height: 100px;
+    float: left;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    background: rgb(24, 151, 255);
+}
+
+.footer.left{
+    width: 55%;
+}
+
+.footer.right {
+    width: 45%;
+}
+
+.footer p{
+    float: right;
+    padding: 30px;
+    text-align: center;
+}
+
+.fa {
+    margin-top: 8%;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa {
+    float: left;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}

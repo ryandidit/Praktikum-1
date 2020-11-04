@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/product.css">
+        <link rel="stylesheet" href="/css/allused_website.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="row1">
+            <div class="nav logo">
+                <a href="/home.html"></a>
+            </div>
+            <div class="nav middle">
+                <div class="navbar">
+                <a href="/html/about_us.html">About Us</a>
+                <a href="#" onclick="openSearch()">Search</a>
+                    <div class="dropdown">
+                        <button class="dropbtn">Product 
+                        </button>
+                        <div class="dropdown-content">
+                        <a href="/html/product camera.html">Camera</a>
+                        <a href="/html/product lens.html">Lens</a>
+                        <a href="/html/product Equipment.html">Equipment</a>
+                        <a href="/html/product accessories.html">Accessories</a>
+                        </div>
+                    </div>
+                <a href="/html/cart.html">Cart</a>
+                <a href="/html/profil biodata.html">Account</a>    
+                </div>
+            </div>
+        </div>
+        <div id="myOverlay" class="overlay">
+            <span class="closebtn" onclick="closeSearch()" title="Close Overlay">x</span>
+                <div class="overlay-content">
+                    <form action="action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit" class="fa fa-search"><i ></i></button>
+                    </form>
+                </div>
+        </div>
+        <script src="/js/search.js"></script>
+
+        <div class="slider">
+            <h1>"Product"</h1>
+        </div>
+
+        <div class="row">
+            <div class="column side">
+                    <a href="/html/product camera.html">Camera</a>
+                    <a href="/html/product lens.html">Lens</a>
+                    <a href="/html/product Equipment.html">Equipment</a>
+                    <a href="/html/product accessories.html">Accessories</a>
+            </div>
+            
+            <div class="column middle">
+                <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'Bag')">Bags</button>
+                <button class="tablinks" onclick="openCity(event, 'Straps')">Straps</button>
+                <button class="tablinks" onclick="openCity(event, 'Case')">Cases</button>
+                </div>
+
+                <div id="Bag" class="tabcontent">
+                    <div class="box1">
+                        <img src="/product picture/tas100.jpg" class="image">
+                        <h4>Compact Camera Bag by KEE</h4>
+                        <button class="btn success">Buy details</button>
+                    </div>
+                    
+                </div>
+
+                <div id="Straps" class="tabcontent">
+                    
+                    
+                </div>
+
+                <div id="Case" class="tabcontent">
+                    
+                    
+                </div>
+
+                <script src="/js/horizontal_tab_product.js"></script>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="footer left">
+                <p>Copyright 2020 by kel.2</p>
+                <p id="demo"></p>
+                <script src="/js/cd_timer.js"></script>
+            </div>
+            <div class="footer right">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            </div>
+        </div>
+        
+    </body>
+</html>
