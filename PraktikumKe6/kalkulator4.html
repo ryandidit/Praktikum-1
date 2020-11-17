@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+    <style>
+        *{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        body{
+            background-color: azure;
+        }
+        table{
+            background-color: snow;
+            margin-top: 80px;
+            height: 400px;
+            width: 300px;
+            padding: 15px;
+        }
+        input{
+            width: 280px;
+            height: 50px;
+            font-size: 30px;
+        }
+        button{
+            text-align: center;
+            height: 40px;
+            width: 68px;
+            font-size: 20px;
+            border: none;
+        }
+        button[type=button]:hover{
+            background-color: rgb(223, 223, 223);
+        }
+    </style>
+
+</head>
+<body>
+    <form name="calculator">
+        <table align="center">
+            <tr>
+                <td colspan="4"><input type="text" name="result" placeholder="0" style="text-align: right;"></td>
+            </tr>
+            <tr>
+                <td><button type="button" onclick="remv()">clr</button></td>
+                <td><button type="button" value="x^2" onclick="square()">x<sup>2</sup></button></td>
+                <td><button type="button" value="%" onclick="number(value)">%</button></td>
+                <td><button type="button" value="bckspc" onclick="bckspc()"><<</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" value="7" onclick="number(value)">7</button></td>
+                <td><button type="button" value="8" onclick="number(value)">8</button></td>
+                <td><button type="button" value="9" onclick="number(value)">9</button></td>
+                <td><button type="button" value="+" onclick="number(value)">+</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" value="4" onclick="number(value)">4</button></td>
+                <td><button type="button" value="5" onclick="number(value)">5</button></td>
+                <td><button type="button" value="6" onclick="number(value)">6</button></td>
+                <td><button type="button" value="-" onclick="number(value)">-</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" value="1" onclick="number(value)">1</button></td>
+                <td><button type="button" value="2" onclick="number(value)">2</button></td>
+                <td><button type="button" value="3" onclick="number(value)">3</button></td>
+                <td><button type="button" value="*" onclick="number(value)">x</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" value="." onclick="number(value)">.</button></td>
+                <td><button type="button" value="0" onclick="number(value)">0</button></td>
+                <td><button type="button" value="=" onclick="equal()">=</button></td>
+                <td><button type="button" value="/" onclick="number(value)">/</button></td>
+            </tr>
+        </table>
+    </form>
+
+    <script type="text/javascript">
+        function square() {
+            document.calculator.result.value = Math.pow(document.calculator.result.value, 2);
+        } 
+        function number(value) {
+            document.calculator.result.value += value;
+        }
+        function remv() {
+            document.calculator.result.value = " ";
+        }
+        function equal() {
+            document.calculator.result.value = eval(document.calculator.result.value);
+        }
+        function bckspc() {
+            var a = document.calculator.result.value;
+            document.calculator.result.value = a.substr(0, a.lenght-1);  
+        } 
+    </script>
+    
+</body>
+</html>
